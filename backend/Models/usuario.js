@@ -9,4 +9,6 @@ const SchemaUsuario = new mongoose.Schema({
     FechaCreacion: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model('Usuario', SchemaUsuario);
+export const ModeloUsuario =  mongoose.model('Usuario', SchemaUsuario);
+
+export default ModeloUsuario;
